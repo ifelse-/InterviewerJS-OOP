@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Job Interviewer</title><!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Optional theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/style.less" rel="stylesheet/less" type="text/css">
+    <script src="customUI.js"></script>
+    <script src="interviewer.js"></script>
+    <script type="text/javascript">
+
+    var interviewer1 = new Interviewer("Janet", 3, 2, 1);
+    interviewer1.name();
+    interviewer1.personality(["bad", "good", "professional"]);
+    interviewer1.talk(["bad", "good", "professional"]);
+    interviewer1.resume(["junior level", "intermediate", "advance", "Guru"]);
+    interviewer1.showScore();
+    </script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/less-1.7.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Header  -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <h1>The Interviewer</h1>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Wrapper -->
+    <div class="container">
+        <div class="row">
+            <div class="centered">
+                <h2>Job Interview Check</h2>
+            </div>
+            <section class="container">
+                <div class="row">
+                   <div class="progress-bar-wrapper">
+                    <div class="progress-bar">
+                    </div>
+                   </div>
+                </div>
+                <div class="row">
+                    <h3>Question Here</h3>
+                </div>
+                <div class="row">
+                 <!-- Radio UI -->   
+                <div id="radiobtn">
+                    <form>
+                    <input type="radio" name="sex" value="male">Male<br>
+                    <input type="radio" name="sex" value="female">Female
+                    </form> 
+                </div>
+                <!-- Radio UI End -->
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Wrapper End -->
+</body>
+</html>
