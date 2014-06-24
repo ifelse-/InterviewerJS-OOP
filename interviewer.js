@@ -1,3 +1,4 @@
+// Object parent Marvin Elmore GiveMe5ive.com
 // Define the Person constructor
 function Interviewer(firstName, personality, talk, resume) {
  this.firstName = firstName;
@@ -68,7 +69,7 @@ Interviewer.prototype.showScore = function() {
 		  }
 		  percent = (gotScore / 100)*100+10;
 		  console.log(this.firstName + " score " +percent + "%");
-	}
+};
 /*
 var interviewer1 = new Interviewer("Janet", 3, 2, 1);
 interviewer1.name();

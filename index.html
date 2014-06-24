@@ -11,12 +11,19 @@
     <script src="interviewer.js"></script>
     <script type="text/javascript">
 
+    //Arrays
+    var personality = ["bad", "good", "professional"];
+    var talk = ["bad", "good", "professional"];
+    var resume = ["junior level", "intermediate", "advance", "Guru"];
+   
+    //Create New Interviewer
     var interviewer1 = new Interviewer("Janet", 3, 2, 1);
     interviewer1.name();
-    interviewer1.personality(["bad", "good", "professional"]);
-    interviewer1.talk(["bad", "good", "professional"]);
-    interviewer1.resume(["junior level", "intermediate", "advance", "Guru"]);
+    interviewer1.personality(personality);
+    interviewer1.talk(talk);
+    interviewer1.resume(resume);
     interviewer1.showScore();
+    
     </script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/less-1.7.0.min.js"></script>
@@ -52,6 +59,8 @@
                  <!-- Radio UI -->   
                 <div id="radiobtn">
                     <form>
+                    <input type="radio" name="sex" value="male">Male<br>
+                    <input type="radio" name="sex" value="female">Female<br>
                     <input type="radio" name="sex" value="male">Male<br>
                     <input type="radio" name="sex" value="female">Female
                     </form> 
